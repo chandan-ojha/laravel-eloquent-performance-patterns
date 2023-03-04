@@ -3,6 +3,7 @@
 <head>
     <title>Clients</title>
     <link rel="stylesheet" href="/css/tailwind-ui.min.css">
+    @vite('resources/js/app.js')
 </head>
 <body>
 <nav class="bg-gray-800">
