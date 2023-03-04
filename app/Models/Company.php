@@ -9,6 +9,8 @@ class Company extends Model
 {
     use HasFactory;
 
+    protected $with = ['users'];
+
     public function users()
     {
         return $this->hasMany(User::class);
