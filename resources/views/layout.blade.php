@@ -40,7 +40,7 @@
                     <button
                         class="ml-3 max-w-xs flex items-center text-sm rounded-full text-white focus:outline-none focus:shadow-solid"
                         id="user-menu" aria-label="User menu" aria-haspopup="true" x-bind:aria-expanded="open">
-                        <img class="h-8 w-8 rounded-full" src="/img/jonathan.jpg" alt="Jonathan Reinink"/>
+                        <img class="h-8 w-8 rounded-full" src="/img/chandan.jpg" alt="Chandan Ojha"/>
                     </button>
                 </div>
             </div>
