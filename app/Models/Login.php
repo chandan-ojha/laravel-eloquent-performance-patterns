@@ -5,13 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class UserPost extends Model
+class Login extends Model
 {
     use HasFactory;
-
-    public function posts()
-    {
-        return $this->hasMany(Post::class, 'author_id');
-    }
-
+    const UPDATED_AT = null;
 }

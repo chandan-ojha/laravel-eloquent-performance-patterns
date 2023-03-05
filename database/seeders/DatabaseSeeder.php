@@ -7,6 +7,8 @@ use App\Models\Company;
 use App\Models\User;
 use App\Models\Post;
 use App\Models\UserPost;
+use App\Models\UserLogin;
+use App\Models\Login;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -21,11 +23,14 @@ class DatabaseSeeder extends Seeder
                 ->has(User::factory()->count(50))
                 ->create();*/
 
-       UserPost::factory()
+       /*UserPost::factory()
            ->count(20)
            ->has(Post::factory()->count(5))
-           ->create();
+           ->create();*/
 
-        // $this->call(UserSeeder::class
+        UserLogin::factory()
+             ->count(60)
+              ->has(Login::factory()->count(500))
+              ->create();
     }
 }
