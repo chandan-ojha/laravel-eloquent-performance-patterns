@@ -2,13 +2,13 @@
 
 namespace Database\Factories;
 
-use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\UserPost>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\UserComment>
  */
-class UserPostFactory extends Factory
+class UserCommentFactory extends Factory
 {
     /**
      * Define the model's default state.

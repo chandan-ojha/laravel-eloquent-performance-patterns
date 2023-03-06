@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\FeaturesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,6 +23,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[UsersController::class, 'index']);
 Route::get('/post',[PostController::class, 'index']);
+Route::get('/feature',[FeaturesController::class, 'index']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
