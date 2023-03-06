@@ -12,7 +12,8 @@
                 </div>
                 <div class="mt-4 flex md:mt-0 md:ml-4">
         <span class="shadow-sm rounded-md">
-          <button type="button" class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:text-gray-800 active:bg-gray-50 transition duration-150 ease-in-out">
+          <button type="button"
+                  class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:text-gray-800 active:bg-gray-50 transition duration-150 ease-in-out">
             New user
           </button>
         </span>
@@ -50,10 +51,16 @@
                                     {{ $user->email }}
                                 </td>
                                 <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-sm leading-5 text-gray-500">
-                                    {{ $user->last_login_at->diffForHumans() }}
+                                    @if($user->lastLogin)
+                                        {{ $user->lastLogin->created_at->diffForHumans() }}
+                                        <span class="text-xs text-gray-400">
+                                             ({{ $user->lastLogin->ip_address }})
+                                         </span>
+                                    @endif
                                 </td>
                                 <td class="px-6 py-4 whitespace-no-wrap text-right border-b border-gray-200 text-sm leading-5 font-medium">
-                                    <a href="#" class="text-indigo-600 hover:text-indigo-900 focus:outline-none focus:underline">Edit</a>
+                                    <a href="#"
+                                       class="text-indigo-600 hover:text-indigo-900 focus:outline-none focus:underline">Edit</a>
                                 </td>
                             </tr>
                         @endforeach
