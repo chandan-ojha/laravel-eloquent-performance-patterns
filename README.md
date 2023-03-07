@@ -6,3 +6,5 @@
 - <p>2) Minimize memory usage </p>
 - <p>3) Getting one record from a has many relationship </p>
 - <p>4) Dynamic relationships using subqueries </p>
+- <p>5) Calculate totals using conditional aggregates</p>
+- <p>5) Optimizing circular relationships</p>
