@@ -18,18 +18,28 @@ class UsersController extends Controller
         return view('users', ['users' => $users]);
     }*/
 
-    public function index()
+    /*public function index()
     {
         $users = UserLogin::query()
-            /*->withLastLoginAt()
-            ->withLastLoginIpAddress()*/
+            //->withLastLoginAt()
+            //->withLastLoginIpAddress()
              ->withLastLogin()
             ->with('lastLogin')
             ->orderBy('name')
             ->paginate();
 
         return view('users', ['users' => $users]);
-    }
+    }*/
 
+    public function multi_column_searching()
+    {
+        $users = User::query()
+            ->search(request('search'))
+            ->with('company')
+            ->paginate();
+
+        return view('users',['users'=>$users]);
+
+    }
 
 }

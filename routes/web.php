@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
     return view('welcome');
 });*/
 
-Route::get('/',[UsersController::class, 'index']);
+Route::get('/',[UsersController::class, 'multi_column_searching']);
 Route::get('/post',[PostController::class, 'index']);
 Route::get('/features',[FeaturesController::class, 'index']);
 Route::get('/all-features',[FeaturesController::class, 'index1']);
