@@ -23,7 +23,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[UsersController::class, 'index']);
 Route::get('/post',[PostController::class, 'index']);
-Route::get('/feature',[FeaturesController::class, 'index']);
+Route::get('/features',[FeaturesController::class, 'index']);
+Route::get('/all-features',[FeaturesController::class, 'index1']);
+Route::get('/all-features/{feature}',[FeaturesController::class, 'show']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
