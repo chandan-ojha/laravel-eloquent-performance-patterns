@@ -12,3 +12,4 @@
 - <p>8) Getting like to use an index </p>
 - <p>9) Faster options than wherehas </p>
 - <p>10) Run additional queries </p>
+- <p>11) Using unions to run queries independently </p>
