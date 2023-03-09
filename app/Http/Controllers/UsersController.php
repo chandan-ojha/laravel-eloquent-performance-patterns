@@ -31,6 +31,7 @@ class UsersController extends Controller
         return view('users', ['users' => $users]);
     }*/
 
+    /*multi-column-searching*/
     public function multi_column_searching()
     {
         $users = User::query()
@@ -39,7 +40,6 @@ class UsersController extends Controller
             ->paginate();
 
         return view('users',['users'=>$users]);
-
     }
 
 }

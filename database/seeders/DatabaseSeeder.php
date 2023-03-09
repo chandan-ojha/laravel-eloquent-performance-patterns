@@ -21,10 +21,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        /*Company::factory()
+        Company::factory()
              ->count(1000)
              ->has(User::factory()->count(50))
-             ->create();*/
+             ->create();
 
         /*UserPost::factory()
             ->count(20)
@@ -36,7 +36,7 @@ class DatabaseSeeder extends Seeder
               ->has(Login::factory()->count(500))
               ->create();*/
 
-        $users = $this->getUsers()
+        /*$users = $this->getUsers()
                        ->map(fn ($user) => UserComment::factory()->create($user));
 
         Feature::factory()
@@ -51,10 +51,10 @@ class DatabaseSeeder extends Seeder
                             $comment->user_id = $users->random()->id;
                         })->toArray()
                 );
-            });
+            });*/
     }
 
-    protected function getUsers()
+    /*protected function getUsers()
     {
         return collect([
             ['name' => 'Lacey Kertzmann', 'photo' => 'female-1.jpeg'],
@@ -78,6 +78,6 @@ class DatabaseSeeder extends Seeder
             ['name' => 'Baron Mayer', 'photo' => 'male-9.jpeg'],
             ['name' => 'John Richards', 'photo' => 'male-10.jpeg'],
         ]);
-    }
+    }*/
 
 }
