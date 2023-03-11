@@ -114,9 +114,11 @@
                                 <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-sm leading-5 text-gray-500">
                                     {{ $user->email }}
                                 </td>
+                                @if($user->company)
                                 <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-sm leading-5 text-gray-500">
                                     {{ $user->company->name }}
                                 </td>
+                                @endif
                                 <td class="px-6 py-4 whitespace-no-wrap text-right border-b border-gray-200 text-sm leading-5 font-medium">
                                     <a href="#"
                                        class="text-indigo-600 hover:text-indigo-900 focus:outline-none focus:underline">Edit</a>
