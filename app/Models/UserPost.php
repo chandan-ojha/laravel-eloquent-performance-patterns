@@ -13,5 +13,4 @@ class UserPost extends Model
     {
         return $this->hasMany(Post::class, 'author_id');
     }
-
 }

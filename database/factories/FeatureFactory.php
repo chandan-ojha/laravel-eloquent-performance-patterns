@@ -17,6 +17,7 @@ class FeatureFactory extends Factory
     public function definition(): array
     {
         $title = fake()->randomElement(['Add', 'Fix', 'Improve']).' '.implode(' ', fake()->words(rand(2, 5)));
+
         return [
             'title' => $title,
             'status' => fake()->randomElement([

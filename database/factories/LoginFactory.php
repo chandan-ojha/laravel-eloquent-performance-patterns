@@ -2,8 +2,6 @@
 
 namespace Database\Factories;
 
-use App\Models\Login;
-use Faker\Generator as Faker;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**

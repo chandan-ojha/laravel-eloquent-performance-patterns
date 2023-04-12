@@ -43,8 +43,7 @@ class UserLogin extends Model
         $query->addSelect(['last_login_id' => Login::select('id')
             ->whereColumn('user_login_id', 'user_logins.id')
             ->latest()
-            ->take(1)
+            ->take(1),
         ])->with('lastLogin');
-
     }
 }

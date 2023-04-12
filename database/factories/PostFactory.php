@@ -2,10 +2,8 @@
 
 namespace Database\Factories;
 
-use App\Models\Post;
-use Faker\Generator as Faker;
-use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Post>

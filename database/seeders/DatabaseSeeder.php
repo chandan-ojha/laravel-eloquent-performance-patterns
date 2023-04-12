@@ -6,12 +6,12 @@ namespace Database\Seeders;
 use App\Models\Comment;
 use App\Models\Company;
 use App\Models\Feature;
-use App\Models\User;
-use App\Models\Post;
-use App\Models\UserComment;
-use App\Models\UserPost;
-use App\Models\UserLogin;
 use App\Models\Login;
+use App\Models\Post;
+use App\Models\User;
+use App\Models\UserComment;
+use App\Models\UserLogin;
+use App\Models\UserPost;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -79,5 +79,4 @@ class DatabaseSeeder extends Seeder
             ['name' => 'John Richards', 'photo' => 'male-10.jpeg'],
         ]);
     }*/
-
 }

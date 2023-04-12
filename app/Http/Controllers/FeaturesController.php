@@ -3,11 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Feature;
-use Illuminate\Http\Request;
 
 class FeaturesController extends Controller
 {
-   //calculate-totals-using-conditional-aggregates
+    //calculate-totals-using-conditional-aggregates
     public function index()
     {
         $statuses = Feature::toBase()
@@ -41,5 +40,9 @@ class FeaturesController extends Controller
         $feature->comments->each->setRelation('feature', $feature);
 
         return view('feature', ['feature' => $feature]);
+    }
+
+    public function test()
+    {
     }
 }

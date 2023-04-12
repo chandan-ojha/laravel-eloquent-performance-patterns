@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use App\Models\UserLogin;
-use Illuminate\Http\Request;
 
 class UsersController extends Controller
 {
@@ -39,7 +38,6 @@ class UsersController extends Controller
             ->with('company')
             ->paginate();
 
-        return view('users',['users'=>$users]);
+        return view('users', ['users' => $users]);
     }
-
 }
